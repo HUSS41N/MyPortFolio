@@ -34,8 +34,11 @@ body{
     display: flex;
     min-height: 70vh;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    
+}
+.small-text{
+    font-size: 3rem;
 }
 .colored{
     color: #E7305C;
@@ -95,7 +98,45 @@ body{
     text-align: center;
     padding: 20rem;
 }
-
+/* projects */
+.projects{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    display: flex;
+    font-size: 2rem;
+    max-width: 150rem;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+.details{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    color: #2c2c2c;
+}
+.details h3{
+    padding-top: 3rem;
+    letter-spacing: 1px;
+}
+.details p {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+.img-contanier{
+    flex: 2 1 80rem;
+    max-height: 40rem;
+    
+}
+.img-contanier img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover
+}
 /* Key Frames */
 @keyframes move-wheel{
     0%{
