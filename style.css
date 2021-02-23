@@ -9,21 +9,63 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
 }
-
-.main-head nav{
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4rem;
+.main-head{
     color: #404040;
+    position: fixed;
+    width: 100%;
+}
+.main-head nav{
+    display: flex;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
     font-size: 2rem;
+    transition: 0.5s;
+}
+.main-head h2 a{ 
+    text-decoration: none;
+    color: inherit;
 }
 .collapse{
     display: flex;
 }
 .collapse h4{
     padding: 0.75rem;
+}
+.collapse h4 a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 5rem;
+}
+/* burger menu */
+.burger {
+    display: none;
+}
+.burger div{
+    height: 3px;
+    width: 30px;
+    background-color: #2c2c2c;
+    margin-top: 4px;
+}
+/* Scroll Animation class */
+.scrolling-active{
+    min-height: 7vh;
+    transition: 0.5s;
+    background-color: #E7305C;
+    color: #fff;
+}
+.nav-background{
+    background-color: #E7305C;
+}
+.nav-background h2 a{
+    color: #fff;
+}
+.nav-background .burger div{
+    background-color: #fff;
+}
+.scrolling-active .burger div{
+    background-color: #fff;
 }
 /* Hero */
 .hero{
@@ -32,7 +74,7 @@ body{
 }
 .hero-main{
     display: flex;
-    min-height: 70vh;
+    min-height: 80vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -166,7 +208,7 @@ body{
 }
 /* contact */
 .contact{
-    min-height: 90vh;
+    min-height: 80vh;
     background-color: #404040;
     font-size: 2.5rem;
     display: flex;
@@ -275,6 +317,7 @@ body{
         opacity: 1;
     }
 }
+
 /* media  */
 @media(max-width:1260px){
     html{
@@ -292,6 +335,28 @@ body{
         width: 90%;
     }
 }
+@media(max-width:768px){
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .collapse{
+        position: absolute;
+        right: 0;
+        font-size: 10rem;
+        height: 90vh;
+        width: 70%;
+        background-color: #E7305C;
+        color: rgb(255, 255, 255);
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+}
 @media(max-width:400px){
     html{
         font-size: 30%;
@@ -300,3 +365,28 @@ body{
         padding: 5rem;
     }
 }
+/* Burger controlls */
+.burger-active{
+    transform: translateX(0%);
+}
+.collapse h4 a:hover{
+    color: #2c2c2c;
+}
+.toggle .line1{
+    transform:  rotate(-45deg) translate(-5px,6px);
+    transition: 0.5s ease-in-out;
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform:  rotate(45deg) translate(-5px,-6px);
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+
+
+

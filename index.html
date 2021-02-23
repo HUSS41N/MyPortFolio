@@ -12,15 +12,21 @@
 </head>
 <body>
     <header class="main-head">
-        <nav>
-            <h2>vgoat.</h2>
+        <nav id="main-header">
+            <h2><a href="#home">vgoat.</a></h2>
             <div class="collapse">
-                <h4>HOME</h4>
-                <h4>| | |</h4>
+                <h4><a href="#about">About</a></h4>
+                <h4><a href="#projects">Projects</a></h4>
+                <h4><a href="#contact">Contact</a></h4>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-main">
             <h1>
                 <span class="small-text">Hi, my name is </span>
@@ -30,7 +36,7 @@
             </h1>
         </div>
         <div class="scroll">
-            <a href="#" class="scroll-down">
+            <a href="#about" class="scroll-down">
                 <div class="mouse">
                     <span></span>
                 </div>
@@ -41,12 +47,12 @@
             </a>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <p>
             Our experience and passion enable us to create powerful brands, develop exciting digital ideas, engage target audiences and deliver remarkable results for all our clients.
         </p>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="project project1">
             <div class="details">
                 <h3>Oracle Manufacturing</h3>
@@ -88,7 +94,7 @@
             <span></span>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1>Talk to Me..</h1>
         <p>Wondering if we can help, but not ready for a chat? <br>
             Just drop us a line in the form bellow we'll get back to you.</p>
