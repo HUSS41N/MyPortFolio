@@ -1,123 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./icons/logo.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Violet Goat</title>
-</head>
-<body>
-    <header class="main-head">
-        <nav id="main-header">
-            <h2 class="bounce-in-top"><a href="#home">vgoat.</a></h2>
-            <div class="collapse">
-                <h4 class="bounce-in-top"><a href="#about">About</a></h4>
-                <h4 class="bounce-in-top"><a href="#projects">Projects</a></h4>
-                <h4 class="bounce-in-top"><a href="#contact">Contact</a></h4>
-                <h4 class="bounce-in-top"><a href="#"> Resume</a></h4>
-            </div>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
-    <section class="hero" id="home">
-        <div class="hero-main">
-            <h1 class="tracking-in-expand" >
-                <span class="small-text tracking-in-expand">Hi, my name is </span>
-                <br>
-                <span class="colored tracking-in-expand" >Md Hussain</span><br>
-                I Build stuff for the web
-            </h1>
-        </div>
-        <div class="scroll">
-            <a href="#about" class="scroll-down">
-                <div class="mouse">
-                    <span></span>
-                </div>
-                <div class="arrow">
-                    <span></span>
-                    <span></span>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <p id="about_text">
-            Our experience and passion enable us to create powerful brands, develop exciting digital ideas, engage target audiences and deliver remarkable results for all our clients.
-        </p>
-    </section>
-    <section class="projects" id="projects">
-        <div class="project project1">
-            <div class="details">
-                <h3>Oracle Manufacturing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam.</p>
-            </div>
-            <div class="img-contanier">
-                <img src="https://images.unsplash.com/photo-1502139214982-d0ad755818d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
-            </div>
-        </div>
-        <div class="project project2">
-            <div class="details">
-                <h3>Oracle Manufacturing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam.</p>
-                <p>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                </p>
-            </div>
-            <div class="img-contanier">
-                <img src="https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
-            </div>
-        </div>
-        <div class="project project3">
-            <div class="details">
-                <h3>Oracle Manufacturing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam.</p>
-            </div>
-            <div class="img-contanier">
-                <img src="https://images.unsplash.com/photo-1613905780946-26b73b6f6e11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="talk">
-        <h1>Project is coming up? <br> <span>Let's talk about it</span></h1>
-        <div class="arrow">
-            <span></span>
-            <span></span>
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <h1>Talk to Me..</h1>
-        <p>Wondering if we can help, but not ready for a chat? <br>
-            Just drop us a line in the form bellow we'll get back to you.</p>
-        <form method="POST" action="https://formsubmit.co/hussainakhtar1111@gmail.com" enctype="multipart/form-data">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <input type="text" name="name" placeholder="Enter your name" required>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-            <button type="submit">submit</button>
-        </form>
-    </section>
-    <footer>
-        <div class="social-media">
-            <h1>Follow me on </h1>
-            <div class="social-media-icon-container">
-                <a href="#"><img src="./icons/facebook.png" alt=""></a>
-                <a href="#"><img src="./icons/github.png" alt=""></a>
-                <a href="#"><img src="./icons/linkdlin.png" alt=""></a>
-                <a href="#"><img src="./icons/twitter.png" alt=""></a>
-                <a href="#"><img src="./icons/instagram.png" alt=""></a>
-            </div>
-        </div>
-    </footer>
-    <script src="app.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="shortcut icon" href="./icons/logo.png" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Violet Goat</title>
+	</head>
+
+	<body>
+		<header class="main-head">
+			<nav id="main-header">
+				<h2 class="bounce-in-top"><a href="#home">vgoat.</a></h2>
+				<div class="collapse">
+					<h4 class="bounce-in-top"><a href="#about">About</a></h4>
+					<h4 class="bounce-in-top">
+						<a href="#projects">Projects</a>
+					</h4>
+					<h4 class="bounce-in-top">
+						<a href="#contact">Contact</a>
+					</h4>
+					<h4 class="bounce-in-top">
+						<a href="./assets/mycv.pdf" target="_blank"> Resume</a>
+					</h4>
+				</div>
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+		<section class="hero" id="home">
+			<div class="hero-main">
+				<h1 class="tracking-in-expand">
+					<span class="small-text tracking-in-expand"
+						>Hi, my name is
+					</span>
+					<br />
+					<span class="colored tracking-in-expand">Md Hussain</span
+					><br />
+					I Build stuff for the web
+				</h1>
+			</div>
+			<div class="scroll">
+				<a href="#about" class="scroll-down">
+					<div class="mouse">
+						<span></span>
+					</div>
+					<div class="arrow">
+						<span></span>
+						<span></span>
+					</div>
+				</a>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<p id="about_text">
+				Our experience and passion enable us to create powerful brands,
+				develop exciting digital ideas, engage target audiences and
+				deliver remarkable results for all our clients.
+			</p>
+		</section>
+		<section class="projects" id="projects">
+			<div class="project project1">
+				<div class="details">
+					<h3>Oracle Manufacturing</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						At, aperiam.
+					</p>
+				</div>
+				<div class="img-contanier">
+					<img src="./img/project1.JPG" alt="" />
+				</div>
+			</div>
+			<div class="project project2">
+				<div class="details">
+					<h3>Oracle Manufacturing</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						At, aperiam.
+					</p>
+					<p>
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>JavaScript</span>
+						<span>React</span>
+					</p>
+				</div>
+				<div class="img-contanier">
+					<img
+						src="https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+						alt=""
+					/>
+				</div>
+			</div>
+			<div class="project project3">
+				<div class="details">
+					<h3>Oracle Manufacturing</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						At, aperiam.
+					</p>
+				</div>
+				<div class="img-contanier">
+					<img
+						src="https://images.unsplash.com/photo-1613905780946-26b73b6f6e11?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
+						alt=""
+					/>
+				</div>
+			</div>
+		</section>
+		<section class="talk">
+			<h1>
+				Project is coming up? <br />
+				<span>Let's talk about it</span>
+			</h1>
+			<div class="arrow">
+				<span></span>
+				<span></span>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<h1>Talk to Me..</h1>
+			<p>
+				Wondering if we can help, but not ready for a chat? <br />
+				Just drop us a line in the form bellow we'll get back to you.
+			</p>
+			<form
+				method="POST"
+				action="https://formsubmit.co/hussainakhtar1111@gmail.com"
+				enctype="multipart/form-data"
+			>
+				<input
+					type="email"
+					name="email"
+					placeholder="Enter your email"
+					required
+				/>
+				<input
+					type="text"
+					name="name"
+					placeholder="Enter your name"
+					required
+				/>
+				<textarea
+					name="message"
+					id=""
+					cols="30"
+					rows="10"
+					placeholder="Enter Your Message"
+				></textarea>
+				<button type="submit">submit</button>
+			</form>
+		</section>
+		<footer>
+			<div class="social-media">
+				<h1>Follow me on</h1>
+				<div class="social-media-icon-container">
+					<a href="#"><img src="./icons/facebook.png" alt="" /></a>
+					<a href="#"><img src="./icons/github.png" alt="" /></a>
+					<a href="#"><img src="./icons/linkdlin.png" alt="" /></a>
+					<a href="#"><img src="./icons/twitter.png" alt="" /></a>
+					<a href="#"><img src="./icons/instagram.png" alt="" /></a>
+				</div>
+			</div>
+		</footer>
+		<script src="app.js"></script>
+	</body>
 </html>
