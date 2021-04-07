@@ -8,6 +8,11 @@ html {
 }
 body {
 	font-family: "Poppins", sans-serif;
+	background-color: #ffffff;
+	background-image: url(./assets/Animated\ Shape.svg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 .main-head {
 	color: #404040;
@@ -532,9 +537,17 @@ body {
 		z-index: 2;
 	}
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
 	html {
 		font-size: 30%;
+	}
+	.about {
+		padding: 5rem;
+	}
+}
+@media (max-width: 300px) {
+	html {
+		font-size: 20%;
 	}
 	.about {
 		padding: 5rem;
