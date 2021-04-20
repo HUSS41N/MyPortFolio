@@ -5,6 +5,7 @@
 }
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 body {
 	font-family: "Poppins", sans-serif;
@@ -236,7 +237,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 4rem;
-	width: 70%;
+	width: 60%;
 }
 .contact input {
 	display: block;
@@ -246,13 +247,14 @@ body {
 	font-size: 2rem;
 }
 .contact input::placeholder {
-	font-weight: 800;
-	text-align: center;
+	font-weight: 700;
+	/* text-align: center; */
 	font-size: 2rem;
 }
 .contact textarea {
 	resize: none;
 	outline: none;
+	margin-top: 2rem;
 	font-size: 4rem;
 }
 .contact textarea::placeholder {
@@ -273,22 +275,20 @@ body {
 	color: #2c2c2c;
 	outline: none;
 	transition: 0.3s;
+	cursor: pointer;
 }
 .contact button:hover {
 	background-color: #2c2c2c;
 	color: #d0d1d2;
 	transition: 0.3s;
 }
-/* footer */
 .social-media {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: 1rem;
-	background-color: #2c2c2c;
 	color: #fff;
-	padding: 5rem 10rem;
 }
 .social-media-icon-container {
 	margin-top: 2rem;
@@ -296,6 +296,28 @@ body {
 .social-media img {
 	width: 5rem;
 	margin: 2rem;
+}
+/* footer */
+footer{
+	min-height: 10vh;
+	background-color: #2c2c2c;
+	padding: 2rem;
+	color: #f2f2f2;
+	font-size: 2rem;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#createdby{
+	margin-top: 2rem;
+}
+#createdby span{
+	color: #e7305c;
+	font-size: 2.5rem;
+	font-weight: 700;
 }
 /* Key Frames */
 
@@ -501,6 +523,9 @@ body {
 @media (max-width: 1366px) {
 	html {
 		font-size: 50%;
+	}
+	.projects{
+		padding:1rem 2rem
 	}
 }
 @media (max-width: 1000px) {
