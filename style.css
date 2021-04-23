@@ -197,6 +197,27 @@ body {
 	/* height: 100%; */
 	object-fit: cover;
 }
+.more {
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 5rem;
+}
+.more button {
+	padding: 2rem 8rem;
+	text-transform: uppercase;
+	background-color: inherit;
+	border: 2px solid #e7305c;
+	color: #e7305c;
+	border-radius: 40px;
+	font-weight: 600;
+	font-size: 2.5rem;
+	transition: 0.25s ease-in-out;
+}
+.more button:hover {
+	background-color: #e7305c;
+	color: #f2f2f2;
+	cursor: pointer;
+}
 /* #ffc048 */
 /* Talk */
 .talk {
