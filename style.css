@@ -49,6 +49,9 @@ body {
 	color: inherit;
 	margin-right: 5rem;
 }
+h4 a:hover {
+	border-bottom: 4px solid #e6083c;
+}
 /* burger menu */
 .burger {
 	display: none;
@@ -186,6 +189,18 @@ body {
 	font-size: 3rem;
 	font-weight: 200;
 	margin-top: 2rem;
+}
+.project span {
+	color: #e7305c;
+	text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+		1px 1px 1px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: 0.25s;
+}
+.project span:hover {
+	color: #ffffff;
+	background: #ffffff;
+	text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
 .img-contanier {
 	flex: 2 1 80rem;
